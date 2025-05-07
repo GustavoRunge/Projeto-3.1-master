@@ -31,6 +31,28 @@ void exibirTabuleiro(int tabuleiro[10][10]){ //tamanho do tabuleiro
     }
 }
 
+int posicionarBarcos(int tabuleiro [10][10], int linha, int coluna){
+    if (tabuleiro[linha][coluna]= 1) {
+        tabuleiro[linha][coluna]= 2; //coloca o barco
+        return 1; //acertou
+    } 
+    return 0; //falhou
+}
+
+int escolha(int tabuleiro[10][10], int linha, int coluna){
+    if (tabuleiro[linha][coluna]= 2) {
+        tabuleiro[linha][coluna]= 3;
+        return 1; //acerto
+
+    } else if (tabuleiro[linha][coluna]= 1){
+        tabuleiro[linha][coluna]=0;
+        return 0;
+    }
+    return -1;
+
+}
+
+
 int main(){
     int tabuleiro[10][10];
     int tentativas=0;
