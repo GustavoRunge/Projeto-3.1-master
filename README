@@ -1,0 +1,34 @@
+Participantes: 
+
+Isabela Bonoto de Castro; 
+Gustavo Runge Passarelli
+
+
+Objetivo do jogo:
+
+- O objetivo do jogo é afundar todos os barcos do inimigo
+  antes que ele afunde os seus. O jogo acontece em um tabuleiro de 10x10, e você precisa adivinhar as posições dos barcos adversários.
+
+Regras:
+
+1. **Posicionamento dos Barcos:**
+   - O computador posiciona aleatoriamente 5 barcos no seu tabuleiro, em locais diferentes. Esses barcos ocupam uma célula no tabuleiro.
+   - O jogador não verá onde os barcos estão posicionados, apenas o tabuleiro vazio no início do jogo.
+
+2. **Fazendo um Palpite:**
+   - O jogador deve inserir as coordenadas (linha e coluna) para tentar acertar um barco adversário.
+   - Se o jogador acertar, o barco será marcado com "X" e o jogador terá um acerto.
+   - Se errar, será marcado com "O", indicando que o palpite foi na água.
+   - O jogo continua até o jogador afundar todos os barcos do adversário.
+
+3. **Tabuleiro:**
+   - O tabuleiro tem 10 linhas e 10 colunas.
+   - As células podem conter:
+     - `~` para água.
+     - `B` para um barco (não visível para o jogador).
+     - `X` para um acerto (quando o jogador acerta um barco).
+     - `-` para um erro (quando o jogador erra e atira na água).
+
+4. **Vencendo o Jogo:**
+   - O jogo termina quando o jogador conseguir afundar todos os barcos do adversário.
+   - O número de tentativas e acertos será exibido durante o jogo.
